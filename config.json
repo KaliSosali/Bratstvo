@@ -1,0 +1,24 @@
+{
+	"_" : ["					COMMENT					",
+		   "model - the name of the vosk model in ur directory",
+		   "in the skills u can change the skill call and bind for it in this format: {'callname' : 'bind'}",
+		   "in heroes dict u can name ur meepos and the callname to select all of them, with each bind",
+		   "WARNING: do not remove or replace the poof's place, it must be first in 'skills' dict. Same for the 'heroes' dict, do not replace first element."
+	],
+
+	"model": "ru",
+
+	"skills" : {
+		"пуф" : "w",
+		"сетка" : "q"
+	},
+	
+	"heroes" : {
+		"братва" : "g",
+		"вася" : "2",
+		"серый" : "1",
+		"эдик" : "d", 
+		"ваня" : "h",
+		"бодя" : "5" 
+	}
+}
