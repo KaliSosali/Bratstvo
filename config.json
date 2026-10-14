@@ -6,19 +6,27 @@
 		   "WARNING: do not remove or replace the poof's place, it must be first in 'skills' dict. Same for the 'heroes' dict, do not replace first element."
 	],
 
-	"model": "ru",
+	"model": "small_ru",
 
 	"skills" : {
 		"пуф" : "w",
-		"сетка" : "q"
+		"сетка" : "q",
+		"сеточка" : "q",
+		"первый" : "z",
+		"второй" : "x",
+		"третий" : "c",
+		"блинк" : "v",
+		"блин" : "v",
+		"блинг" : "v"
 	},
 	
 	"heroes" : {
-		"братва" : "g",
+		"парни" : "g",
+		"братва" : "3",
 		"вася" : "2",
-		"серый" : "1",
+		"игорь" : "1",
 		"эдик" : "d", 
-		"ваня" : "h",
-		"бодя" : "5" 
+		"паша" : "h",
+		"макар" : "5" 
 	}
 }
