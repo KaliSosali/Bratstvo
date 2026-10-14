@@ -3,6 +3,7 @@ Meepo voice control
 
 # 1. Download the model
 Ru small model link(recomended for much more speed): https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip
+
 Ru big model (not recomended): https://alphacephei.com/vosk/models/vosk-model-ru-0.42.zip
 # 2. Rename model
 When u downloaded a model rename it to "ru" or change the "model" field in config.json
