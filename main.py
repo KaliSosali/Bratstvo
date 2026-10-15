@@ -18,7 +18,7 @@ def main():
             continue
         text = output[1]
         print("Input: " + text)
-        result = actions.convert_to_action(text, cfg)
+        result = actions.convert(text, cfg)
         if result:
             print("Doing: " + result)
             immitate.execute_input(result)

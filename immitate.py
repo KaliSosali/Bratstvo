@@ -2,20 +2,21 @@ import keyboard
 import time
 
 def execute_input(user_input):
-    l = user_input.split()
-    i = 0
+    flag = False
 
-    if len(l) >= 2:
-        i = 1
-        hotkey = l[0].split('+')
-        keyboard.press(hotkey[0])
-        time.sleep(0.05)
-        keyboard.write(hotkey[1])
-        keyboard.release(hotkey[0])
-        time.sleep(0.05)
+    for char in user_input:
+        if flag:
+            time.sleep(0.05)
+            keyboard.write(char)
+            keyboard.release("ctrl")
+            flag = False
+            continue
 
-    for char in l[i]:
-        keyboard.write(char)
-        if char != l[i][-1]:
-            time.sleep(0.01)
+        if char != '@':
+            keyboard.write(char)
+            if char != user_input[-1]:
+                time.sleep(0.01)
+            continue
 
+        keyboard.press("ctrl")
+        flag = True
